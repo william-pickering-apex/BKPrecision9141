@@ -12,15 +12,18 @@ def powerCycleAll(instrument_in):
     instrument_in.query('INST 1')
     instrument_in.query('OUTP 0')
 
+
     time.sleep(5)
 
     #Turn channel 0 off
     instrument_in.query('INST 0')
     instrument_in.query('OUTP 1')
 
+
+
     #Turn channel 1 off
-    instrument_in.query('INST 1')
-    instrument_in.query('OUTP 1')
+    #instrument_in.query('INST 1')
+    #instrument_in.query('OUTP 1')
 
 
 rm = pyvisa.ResourceManager()
